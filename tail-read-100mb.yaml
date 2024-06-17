@@ -1,0 +1,27 @@
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+name: 1-topic-100-partitions-500m
+
+topics: 1
+partitionsPerTopic: 60
+messageSize: 4096
+payloadFile: "payload/payload-4Kb.data"
+subscriptionsPerTopic: 1
+consumerPerSubscription: 10
+producersPerTopic: 10
+producerRate: 25600
+consumerBacklogSizeGB: 0
+warmupDurationMinutes: 10
+testDurationMinutes: 30
